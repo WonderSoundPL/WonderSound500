@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WonderSound</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>WonderSound</h1>
+
+<h2>Global 100 Ranking</h2>
+<ul id="global-ranking"></ul>
+
+<h2>Dodaj Artystę</h2>
+<input type="text" id="artist-name" placeholder="Wpisz nazwę artysty">
+<button onclick="addArtist()">Dodaj Artystę</button>
+
+<h2>Dodaj Piosenkę</h2>
+<input type="text" id="song-title" placeholder="Wpisz tytuł piosenki">
+<input type="text" id="song-artist" placeholder="Wpisz artystę">
+<button onclick="addSong()">Dodaj Piosenkę</button>
+
+<h2>Lista Artystów</h2>
+<ul id="artist-list"></ul>
+
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
